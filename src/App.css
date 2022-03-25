@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.RuneContainer{
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1.6fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."; 
+
+  border: 2px solid black;
+}
+
+.RuneButtonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
