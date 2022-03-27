@@ -73,12 +73,10 @@
 
 .RuneAmountDisplay{
   /* display ontop and middle of RuneImage */
-  position:relative;
-  top: 35%;
-  text-align: center;
   opacity: 0.8;
   font-size: 1.5em;
   text-shadow: 1px 1px 1px black;
+  z-index: 2;
 }
 
 button{
