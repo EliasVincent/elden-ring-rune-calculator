@@ -88,6 +88,7 @@ function App() {
               src={goldenRune1Img}
               alt="Golden Rune 1"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune1}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -118,6 +119,7 @@ function App() {
               src={goldenRune2Img}
               alt="Golden Rune 2"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune2}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -148,6 +150,7 @@ function App() {
               src={goldenRune3Img}
               alt="Golden Rune 3"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune3}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -178,6 +181,7 @@ function App() {
               src={goldenRune4Img}
               alt="Golden Rune 4"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune4}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -208,6 +212,7 @@ function App() {
               src={goldenRune5Img}
               alt="Golden Rune 5"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune5}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -238,6 +243,7 @@ function App() {
               src={goldenRune6Img}
               alt="Golden Rune 6"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune6}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -268,6 +274,7 @@ function App() {
               src={goldenRune7Img}
               alt="Golden Rune 7"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune7}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -298,6 +305,7 @@ function App() {
               src={goldenRune8Img}
               alt="Golden Rune 8"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune8}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -328,6 +336,7 @@ function App() {
               src={goldenRune9Img}
               alt="Golden Rune 9"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune9}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -358,6 +367,7 @@ function App() {
               src={goldenRune10Img}
               alt="Golden Rune 10"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune10}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -388,6 +398,7 @@ function App() {
               src={goldenRune10Img}
               alt="Golden Rune 11"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune11}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -418,6 +429,7 @@ function App() {
               src={goldenRune12Img}
               alt="Golden Rune 12"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune12}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -448,6 +460,7 @@ function App() {
               src={goldenRune12Img}
               alt="Golden Rune 13"
             ></img>
+            <div className="RuneAmountDisplay">{goldenRune13}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -478,6 +491,7 @@ function App() {
               src={goldenRune12Img}
               alt="Numen's Rune"
             ></img>
+            <div className="RuneAmountDisplay">{numensRune}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -508,6 +522,7 @@ function App() {
               src={herosRune1Img}
               alt="Hero's Rune 1"
             ></img>
+            <div className="RuneAmountDisplay">{herosRune1}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -538,6 +553,7 @@ function App() {
               src={herosRune1Img}
               alt="Hero's Rune 2"
             ></img>
+            <div className="RuneAmountDisplay">{herosRune2}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -568,6 +584,7 @@ function App() {
               src={herosRune1Img}
               alt="Hero's Rune 3"
             ></img>
+            <div className="RuneAmountDisplay">{herosRune3}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -598,6 +615,7 @@ function App() {
               src={herosRune4Img}
               alt="Hero's Rune 4"
             ></img>
+            <div className="RuneAmountDisplay">{herosRune4}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -628,6 +646,7 @@ function App() {
               src={herosRune5Img}
               alt="Hero's Rune 5"
             ></img>
+            <div className="RuneAmountDisplay">{herosRune5}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
@@ -658,6 +677,7 @@ function App() {
               src={lordsRuneImg}
               alt="Lord's Rune"
             ></img>
+            <div className="RuneAmountDisplay">{lordsRune}</div>
           </div>
           <div className="RuneButtonContainer">
             <button
