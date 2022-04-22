@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/elden-ring-rune-calculator/static/css/main.55f6ea94.css",
+    "main.js": "/elden-ring-rune-calculator/static/js/main.f30e9d9d.js",
+    "static/js/787.b498000f.chunk.js": "/elden-ring-rune-calculator/static/js/787.b498000f.chunk.js",
+    "static/media/heros-rune-5-consumable-elden-ring-wiki-guide.png": "/elden-ring-rune-calculator/static/media/heros-rune-5-consumable-elden-ring-wiki-guide.e974649309585594a12b.png",
+    "static/media/heros-rune-4-consumable-elden-ring-wiki-guide.png": "/elden-ring-rune-calculator/static/media/heros-rune-4-consumable-elden-ring-wiki-guide.582e3ebc85c66a8d8bf5.png",
+    "static/media/lords-rune-tools-elden-ring-wiki-guide.png": "/elden-ring-rune-calculator/static/media/lords-rune-tools-elden-ring-wiki-guide.2770ef468d4b5119d891.png",
+    "static/media/heros-rune-1-consumable-elden-ring-wiki-guide.png": "/elden-ring-rune-calculator/static/media/heros-rune-1-consumable-elden-ring-wiki-guide.ade1d02eaf35507098e9.png",
+    "static/media/golden_rune_10_elden_ring_wiki_guide_200px.png": "/elden-ring-rune-calculator/static/media/golden_rune_10_elden_ring_wiki_guide_200px.ca56fbfaf20f70fbbc81.png",
+    "static/media/golden_rune_9_elden_ring_wiki_guide_200px.png": "/elden-ring-rune-calculator/static/media/golden_rune_9_elden_ring_wiki_guide_200px.a699f0b4a3c8d6658c9f.png",
+    "index.html": "/elden-ring-rune-calculator/index.html",
+    "main.55f6ea94.css.map": "/elden-ring-rune-calculator/static/css/main.55f6ea94.css.map",
+    "main.f30e9d9d.js.map": "/elden-ring-rune-calculator/static/js/main.f30e9d9d.js.map",
+    "787.b498000f.chunk.js.map": "/elden-ring-rune-calculator/static/js/787.b498000f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55f6ea94.css",
+    "static/js/main.f30e9d9d.js"
+  ]
+}

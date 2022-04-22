@@ -1,9 +1,0 @@
-body {
-  margin: 0;
-  font-family: 'Spectral', serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  background: rgba(0, 0, 0, 0.95);
-  color: #e7c891;
-}
