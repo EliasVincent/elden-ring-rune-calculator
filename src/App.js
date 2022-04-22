@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+import Rune from "./Rune";
 // import images
 import goldenRune1Img from "../src/images/golden_rune_1_elden_ring_wiki_guide_200px.png";
 import goldenRune2Img from "../src/images/golden_rune_2_elden_ring_wiki_guide_200px.png";
@@ -17,6 +18,9 @@ import herosRune4Img from "../src/images/heros-rune-4-consumable-elden-ring-wiki
 import herosRune5Img from "../src/images/heros-rune-5-consumable-elden-ring-wiki-guide.png";
 import lordsRuneImg from "../src/images/lords-rune-tools-elden-ring-wiki-guide.png";
 import { dontGoIntoNegative } from "./dontGoIntoNegative";
+
+const goldenRune11Img = goldenRune10Img
+const goldenRune13Img = goldenRune12Img
 
 export const goldenRune1 = 200;
 export const goldenRune2 = 400;
@@ -80,625 +84,306 @@ function App() {
       <h1>Elden Ring Rune Calculator</h1>
 
       <div className="AllRuneContainers">
-        <div className="RuneContainer">
-          <div>Golden Rune 1</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune1Img}
-              alt="Golden Rune 1"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune1}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune1);
-                setGoldenRune1Counter(goldenRune1Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune1Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune1);
-                setGoldenRune1Counter(goldenRune1Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
 
-        <div className="RuneContainer">
-          <div>Golden Rune 2</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune2Img}
-              alt="Golden Rune 2"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune2}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune2);
-                setGoldenRune2Counter(goldenRune2Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune2Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune2);
-                setGoldenRune2Counter(goldenRune2Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 1"
+          image = {goldenRune1Img}
+          rune = {goldenRune1}
+          runeCounter = {goldenRune1Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune1);
+            setGoldenRune1Counter(goldenRune1Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune1);
+            setGoldenRune1Counter(goldenRune1Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Golden Rune 3</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune3Img}
-              alt="Golden Rune 3"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune3}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune3);
-                setGoldenRune3Counter(goldenRune3Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune3Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune3);
-                setGoldenRune3Counter(goldenRune3Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 2"
+          image = {goldenRune2Img}
+          rune = {goldenRune2}
+          runeCounter = {goldenRune2Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune2);
+            setGoldenRune2Counter(goldenRune2Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune2);
+            setGoldenRune2Counter(goldenRune2Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Golden Rune 4</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune4Img}
-              alt="Golden Rune 4"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune4}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune4);
-                setGoldenRune4Counter(goldenRune4Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune4Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune4);
-                setGoldenRune4Counter(goldenRune4Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 3"
+          image = {goldenRune3Img}
+          rune = {goldenRune3}
+          runeCounter = {goldenRune3Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune3);
+            setGoldenRune3Counter(goldenRune3Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune3);
+            setGoldenRune3Counter(goldenRune3Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Golden Rune 5</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune5Img}
-              alt="Golden Rune 5"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune5}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune5);
-                setGoldenRune5Counter(goldenRune5Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune5Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune5);
-                setGoldenRune5Counter(goldenRune5Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 4"
+          image = {goldenRune4Img}
+          rune = {goldenRune4}
+          runeCounter = {goldenRune4Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune4);
+            setGoldenRune4Counter(goldenRune4Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune4);
+            setGoldenRune4Counter(goldenRune4Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Golden Rune 6</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune6Img}
-              alt="Golden Rune 6"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune6}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune6);
-                setGoldenRune6Counter(goldenRune6Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune6Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune6);
-                setGoldenRune6Counter(goldenRune6Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 5"
+          image = {goldenRune5Img}
+          rune = {goldenRune5}
+          runeCounter = {goldenRune5Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune5);
+            setGoldenRune5Counter(goldenRune5Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune5);
+            setGoldenRune5Counter(goldenRune5Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Golden Rune 7</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune7Img}
-              alt="Golden Rune 7"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune7}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune7);
-                setGoldenRune7Counter(goldenRune7Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune7Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune7);
-                setGoldenRune7Counter(goldenRune7Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 6"
+          image = {goldenRune6Img}
+          rune = {goldenRune6}
+          runeCounter = {goldenRune6Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune6);
+            setGoldenRune6Counter(goldenRune6Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune6);
+            setGoldenRune6Counter(goldenRune6Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Golden Rune 8</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune8Img}
-              alt="Golden Rune 8"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune8}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune8);
-                setGoldenRune8Counter(goldenRune8Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune8Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune8);
-                setGoldenRune8Counter(goldenRune8Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 7"
+          image = {goldenRune7Img}
+          rune = {goldenRune7}
+          runeCounter = {goldenRune7Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune7);
+            setGoldenRune7Counter(goldenRune7Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune7);
+            setGoldenRune7Counter(goldenRune7Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Golden Rune 9</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune9Img}
-              alt="Golden Rune 9"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune9}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune9);
-                setGoldenRune9Counter(goldenRune9Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune9Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune9);
-                setGoldenRune9Counter(goldenRune9Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 8"
+          image = {goldenRune8Img}
+          rune = {goldenRune8}
+          runeCounter = {goldenRune8Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune8);
+            setGoldenRune8Counter(goldenRune8Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune8);
+            setGoldenRune8Counter(goldenRune8Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Golden Rune 10</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune10Img}
-              alt="Golden Rune 10"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune10}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune10);
-                setGoldenRune10Counter(goldenRune10Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune10Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune10);
-                setGoldenRune10Counter(goldenRune10Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 9"
+          image = {goldenRune9Img}
+          rune = {goldenRune9}
+          runeCounter = {goldenRune9Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune9);
+            setGoldenRune9Counter(goldenRune9Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune9);
+            setGoldenRune9Counter(goldenRune9Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Golden Rune 11</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune10Img}
-              alt="Golden Rune 11"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune11}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune11);
-                setGoldenRune11Counter(goldenRune11Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune11Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune11);
-                setGoldenRune11Counter(goldenRune11Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 10"
+          image = {goldenRune10Img}
+          rune = {goldenRune10}
+          runeCounter = {goldenRune10Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune10);
+            setGoldenRune10Counter(goldenRune10Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune10);
+            setGoldenRune10Counter(goldenRune10Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Golden Rune 12</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune12Img}
-              alt="Golden Rune 12"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune12}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune12);
-                setGoldenRune12Counter(goldenRune12Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune12Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune12);
-                setGoldenRune12Counter(goldenRune12Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 11"
+          image = {goldenRune11Img}
+          rune = {goldenRune11}
+          runeCounter = {goldenRune11Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune11);
+            setGoldenRune11Counter(goldenRune11Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune11);
+            setGoldenRune11Counter(goldenRune11Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Golden Rune 13</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune12Img}
-              alt="Golden Rune 13"
-            ></img>
-            <div className="RuneAmountDisplay">{goldenRune13}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(goldenRune13);
-                setGoldenRune13Counter(goldenRune13Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{goldenRune13Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(goldenRune13);
-                setGoldenRune13Counter(goldenRune13Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 12"
+          image = {goldenRune12Img}
+          rune = {goldenRune12}
+          runeCounter = {goldenRune12Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune12);
+            setGoldenRune12Counter(goldenRune12Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune12);
+            setGoldenRune12Counter(goldenRune12Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Numen's Rune</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={goldenRune12Img}
-              alt="Numen's Rune"
-            ></img>
-            <div className="RuneAmountDisplay">{numensRune}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(numensRune);
-                setNumensRuneCounter(numensRuneCounter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{numensRuneCounter}</div>
-            <button
-              onClick={() => {
-                addRunes(numensRune);
-                setNumensRuneCounter(numensRuneCounter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Golden Rune 13"
+          image = {goldenRune13Img}
+          rune = {goldenRune13}
+          runeCounter = {goldenRune13Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(goldenRune13);
+            setGoldenRune13Counter(goldenRune13Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(goldenRune13);
+            setGoldenRune13Counter(goldenRune13Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Hero's Rune 1</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={herosRune1Img}
-              alt="Hero's Rune 1"
-            ></img>
-            <div className="RuneAmountDisplay">{herosRune1}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(herosRune1);
-                setHerosRune1Counter(herosRune1Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{herosRune1Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(herosRune1);
-                setHerosRune1Counter(herosRune1Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Numen's Rune"
+          image = {goldenRune12Img}
+          rune = {numensRune}
+          runeCounter = {numensRuneCounter}
+          subtractRuneFunction = {() => {
+            subtractRunes(numensRune);
+            setNumensRuneCounter(numensRuneCounter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(numensRune);
+            setNumensRuneCounter(numensRuneCounter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Hero's Rune 2</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={herosRune1Img}
-              alt="Hero's Rune 2"
-            ></img>
-            <div className="RuneAmountDisplay">{herosRune2}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(herosRune2);
-                setHerosRune2Counter(herosRune2Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{herosRune2Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(herosRune2);
-                setHerosRune2Counter(herosRune2Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Hero's Rune 1"
+          image = {herosRune1Img}
+          rune = {herosRune1}
+          runeCounter = {herosRune1Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(herosRune1);
+            setHerosRune1Counter(herosRune1Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(herosRune1);
+            setHerosRune1Counter(herosRune1Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Hero's Rune 3</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={herosRune1Img}
-              alt="Hero's Rune 3"
-            ></img>
-            <div className="RuneAmountDisplay">{herosRune3}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(herosRune3);
-                setHerosRune3Counter(herosRune3Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{herosRune3Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(herosRune3);
-                setHerosRune3Counter(herosRune3Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Hero's Rune 2"
+          image = {herosRune1Img}
+          rune = {herosRune2}
+          runeCounter = {herosRune2Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(herosRune2);
+            setHerosRune2Counter(herosRune2Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(herosRune2);
+            setHerosRune2Counter(herosRune2Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Hero's Rune 4</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={herosRune4Img}
-              alt="Hero's Rune 4"
-            ></img>
-            <div className="RuneAmountDisplay">{herosRune4}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(herosRune4);
-                setHerosRune4Counter(herosRune4Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{herosRune4Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(herosRune4);
-                setHerosRune4Counter(herosRune4Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Hero's Rune 3"
+          image = {herosRune1Img}
+          rune = {herosRune3}
+          runeCounter = {herosRune3Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(herosRune3);
+            setHerosRune3Counter(herosRune3Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(herosRune3);
+            setHerosRune3Counter(herosRune3Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Hero's Rune 5</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={herosRune5Img}
-              alt="Hero's Rune 5"
-            ></img>
-            <div className="RuneAmountDisplay">{herosRune5}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(herosRune5);
-                setHerosRune5Counter(herosRune5Counter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{herosRune5Counter}</div>
-            <button
-              onClick={() => {
-                addRunes(herosRune5);
-                setHerosRune5Counter(herosRune5Counter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Hero's Rune 4"
+          image = {herosRune4Img}
+          rune = {herosRune4}
+          runeCounter = {herosRune4Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(herosRune4);
+            setHerosRune4Counter(herosRune4Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(herosRune4);
+            setHerosRune4Counter(herosRune4Counter + 1);
+          }}
+        />
 
-        <div className="RuneContainer">
-          <div>Lord's Rune</div>
-          <div className="RuneImageContainer">
-            <img
-              className="RuneImage"
-              src={lordsRuneImg}
-              alt="Lord's Rune"
-            ></img>
-            <div className="RuneAmountDisplay">{lordsRune}</div>
-          </div>
-          <div className="RuneButtonContainer">
-            <button
-              onClick={() => {
-                subtractRunes(lordsRune);
-                setLordsRuneCounter(lordsRuneCounter - 1);
-              }}
-            >
-              -
-            </button>
-            <div>{lordsRuneCounter}</div>
-            <button
-              onClick={() => {
-                addRunes(lordsRune);
-                setLordsRuneCounter(lordsRuneCounter + 1);
-              }}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <Rune
+          name = "Hero's Rune 5"
+          image = {herosRune5Img}
+          rune = {herosRune5}
+          runeCounter = {herosRune5Counter}
+          subtractRuneFunction = {() => {
+            subtractRunes(herosRune5);
+            setHerosRune5Counter(herosRune5Counter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(herosRune5);
+            setHerosRune5Counter(herosRune5Counter + 1);
+          }}
+        />
+
+        <Rune
+          name = "Lord's Rune"
+          image = {lordsRuneImg}
+          rune = {lordsRune}
+          runeCounter = {lordsRuneCounter}
+          subtractRuneFunction = {() => {
+            subtractRunes(lordsRune);
+            setLordsRuneCounter(lordsRuneCounter - 1);
+          }}
+          addRuneFunction = {() => {
+            addRunes(lordsRune);
+            setLordsRuneCounter(lordsRuneCounter + 1);
+          }}
+        />
 
         {/* end of rune section */}
       </div>
